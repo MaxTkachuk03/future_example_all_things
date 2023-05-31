@@ -12,9 +12,8 @@ void addHello(String name){
   print("Hello, $name");
 }
 
-greetName(){
-  addHello(fetchUserName().toString());
-  
+greetName() async {
+  addHello(await fetchUserName());
 }
 
 Future<void> sayGoobbye() async {
